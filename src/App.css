@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+button {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article {
+  text-align: center;
+  width: 100%;
+}
+
+section {
+  width: 85%;
+  display: flex;
+}
+
+.list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar {
+  width: 20%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.word_list {
+  border-top: 1px solid black;
+  width: 80%;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.span_button {
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.sidebar_button {
+  color: black;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid black;
+}
+
+.sidebar_button:hover {
+  background-color: #f2f2f2;
+}
+
+.wordcloud_image {
+  width: 7.68cm;
+  height: 5.3cm;
+}
+
+.autocomplete-card {
+  width: 150px;
+  height: 170px;
+  margin: 15px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.autocomplete-card img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid lightgray;
+}
+
+.autocomplete-card:hover {
+  background-color: #f2f2f2;
+  border: 1.5px solid black;
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.review-footer button {
+  width: 90px;
+  height: 40px;
+  margin: 0 5px;
+  color: black;
+  background-color: #f2f2f2;
+  border: 1.5px solid black;
+}
+
+.review-custom-card {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.review-custom-card input {
+  width: 300px;
+  margin: 0 5px;
+}
+
+.navigation {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.navigation * {
+  margin: 0 10px;
 }

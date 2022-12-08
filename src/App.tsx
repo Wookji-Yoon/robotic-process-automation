@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
+
+import Review from "./pages/Review";
+import WordCloud from "./pages/WordCloud";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="navigation">
+        <Link to="/">Home</Link>
+        <Link to="/review">Review</Link>
+        <Link to="/wordcloud">Wordcloud</Link>
+      </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/wordcloud" element={<WordCloud />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
