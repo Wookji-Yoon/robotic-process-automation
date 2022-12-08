@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/robotic-process-automation/static/css/main.8343dabc.css",
-    "main.js": "/robotic-process-automation/static/js/main.bdff3e63.js",
+    "main.js": "/robotic-process-automation/static/js/main.985920a9.js",
     "index.html": "/robotic-process-automation/index.html",
     "main.8343dabc.css.map": "/robotic-process-automation/static/css/main.8343dabc.css.map",
-    "main.bdff3e63.js.map": "/robotic-process-automation/static/js/main.bdff3e63.js.map"
+    "main.985920a9.js.map": "/robotic-process-automation/static/js/main.985920a9.js.map"
   },
   "entrypoints": [
     "static/css/main.8343dabc.css",
-    "static/js/main.bdff3e63.js"
+    "static/js/main.985920a9.js"
   ]
 }
