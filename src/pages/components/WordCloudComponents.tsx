@@ -271,8 +271,10 @@ export function CreateWordCloudImageButton({
   const handleClick = () => {
     //loading을 true로 바꿔준다
     setIsWordcloudLoading(true);
+    //word에서 valuerk 높은 순으로 상위 50개 단어를 뽑아내기
+    const top50Words = words.sort((a, b) => b.value - a.value).slice(0, 50);
     //word.text를 word.value만큼 반복하고 " "로 구분하여 하나의 string으로 만들어준다.
-    const text = words
+    const text = top50Words
       .map((word) => {
         const arr = new Array(word.value).fill(word.text);
         return arr.join(" ");
