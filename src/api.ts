@@ -1,6 +1,13 @@
 import { IReviews } from "./pages/Review";
 
-const base_heroku_api_url = "https://wookji-fastapi.herokuapp.com/";
+export const base_heroku_api_url = "https://wookji-fastapi.herokuapp.com/";
+//export const base_heroku_api_url = "http://127.0.0.1:8000/";
+
+export async function fetchGoodMorningHeroku() {
+  const response = await fetch(base_heroku_api_url);
+  const data = await response.json();
+  return data;
+}
 
 export async function fetchJobplanetAutoComplete(keyword: string) {
   const response = await fetch(base_heroku_api_url + "jobplanet/autocomplete?keyword=" + keyword);

@@ -130,8 +130,15 @@ section {
   border-bottom: 1px solid gainsboro;
   padding-bottom: 10px;
   padding-top: 5px;
+  background-color: #11264f;
 }
 
 .navigation * {
   margin: 0 10px;
+  color: white;
+}
+
+.home-article {
+  font-size: 14px;
+  font-style: italic;
 }

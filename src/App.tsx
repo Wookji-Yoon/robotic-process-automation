@@ -1,9 +1,10 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
 
+import Home from "./pages/Home";
 import Review from "./pages/Review";
 import WordCloud from "./pages/WordCloud";
+import Comment from "./pages/Comment";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/review" element={<Review />} />
           <Route path="/wordcloud" element={<WordCloud />} />
+          <Route path="/comment" element={<Comment />} />
         </Routes>
       </main>
     </>
